@@ -11,8 +11,7 @@ const trialTime = new Date().setHours(15, 0, 0, 0);
 const formattedTime = new Date(trialTime).toLocaleTimeString();
 const hours = new Date(trialTime).getHours();
 */
-const currentTime = new Date().toLocaleTimeString();
-const currentTimeHours = new Date(currentTime).getHours();
+const currentTime = new Date().getHours();
 
 console.log(currentTime);
 
@@ -20,7 +19,7 @@ const darkMode = "darkblue";
 const lightMode = "white";
 
 let mode;
-if(currentTimeHours >= 20 || currentTimeHours <= 7) {
+if(currentTime >= 20 || currentTime <= 7) {
   mode = darkMode;
 }
 else {
@@ -29,7 +28,7 @@ else {
 
 function homework() {
   return (
-    <div className="timeDiv" style={{ background: mode}}>Trenutno vrijeme je: { currentTime }
+    <div className="timeDiv" style={{ background: mode}}>Trenutno vrijeme je: { currentTime } h
     <div ></div>
     </div>
   );

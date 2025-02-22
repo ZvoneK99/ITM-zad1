@@ -1,5 +1,5 @@
-# Zadaca 1
+# Task 1
 
-# Automatski Dark Mode
+# Automatic Dark Mode
 
-Aplikacija automatski mijenja pozadinu `div` elementa u **tamno plavu** između **20:00 i 07:00h**.
+The application automatically changes the background of the `div` element to **dark blue** between **20:00 and 07:00**.
